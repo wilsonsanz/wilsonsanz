@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saludar"
+        android:layout_below="@id/inputNombre"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/inputNumero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un número"
+        android:inputType="number"
+        android:layout_below="@id/btnSaludo"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:layout_below="@id/inputNumero1"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnParImpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar Par/Impar"
+        android:layout_below="@id/btnSuma"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnCuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Cuadrado"
+        android:layout_below="@id/btnParImpar"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnAreaCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Área del Círculo"
+        android:layout_below="@id/btnCuadrado"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="18sp"
+        android:layout_below="@id/btnAreaCirculo"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <!-- Titulo -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Entrada para el número -->
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Introduce un número"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"/>
+
+    <!-- Botón para el factorial -->
+    <Button
+        android:id="@+id/factorialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Factorial"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@id/numberInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botón para números primos -->
+    <Button
+        android:id="@+id/primeNumbersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Números primos entre 1 y 50"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@id/factorialButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botón para sumar los dígitos -->
+    <Button
+        android:id="@+id/sumDigitsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar dígitos"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/primeNumbersButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botón para invertir un número -->
+    <Button
+        android:id="@+id/invertNumberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invertir número"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_purple"
+        android:layout_below="@id/sumDigitsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <!-- TextView para mostrar resultados -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

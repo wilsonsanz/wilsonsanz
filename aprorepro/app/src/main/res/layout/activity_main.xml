@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- EditText para ingresar la calificación del estudiante -->
+    <EditText
+        android:id="@+id/calificacionEstudiante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la calificación"
+        android:inputType="numberDecimal"
+        android:gravity="center" />
+
+    <!-- Button para calcular si el estudiante está aprobado o reprobado -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:gravity="center" />
+</LinearLayout>

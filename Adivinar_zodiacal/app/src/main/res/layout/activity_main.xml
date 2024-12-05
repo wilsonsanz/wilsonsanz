@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/diaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Día de nacimiento"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/mesNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mes de nacimiento"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Signo Zodiacal"/>
+
+    <TextView
+        android:id="@+id/mensajeZodiacal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu signo será mostrado aquí"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

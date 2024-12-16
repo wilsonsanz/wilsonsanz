@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnDeposit10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depositar $10" />
+
+    <Button
+        android:id="@+id/btnDeposit20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depositar $20"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnDeposit50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depositar $50"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnCancelDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

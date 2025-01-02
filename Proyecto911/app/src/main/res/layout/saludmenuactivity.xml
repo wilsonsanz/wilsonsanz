@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnIntoxicado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intoxicado"
+                android:layout_marginEnd="32dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_intoxicacion"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnAtaqueCardiaco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ataque Cardiaco"
+                android:color="#43A9CC"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_ataquecardiaco"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnHeridabala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herida por Arma de Fuego"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_heridobala"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnCaida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caida / Lesiones"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_caida"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnEmbarazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Embarazada"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_embarazada"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnProblemaRespiratorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Problema Respiratorio"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_respiratorio"
+                android:contentDescription="Icono de Robo" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

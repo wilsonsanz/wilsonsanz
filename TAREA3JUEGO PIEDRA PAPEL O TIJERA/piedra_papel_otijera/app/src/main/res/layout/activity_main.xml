@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Botón Piedra (Amarillo) -->
+    <Button
+        android:id="@+id/btnRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFFF00"
+        android:text="Piedra"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Botón Papel (Azul) -->
+    <Button
+        android:id="@+id/btnPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#0000FF"
+        android:text="Papel"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/btnRock"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Botón Tijera (Rojo) -->
+    <Button
+        android:id="@+id/btnScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FF0000"
+        android:text="Tijera"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/btnPaper"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Imagen de "Piedrin" -->
+    <ImageView
+        android:id="@+id/imgPiedrin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnScissors"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/piedrin"
+        android:contentDescription="Imagen de Piedrin" />
+
+    <!-- Texto para mostrar el resultado -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/imgPiedrin"
+        android:layout_centerHorizontal="true"
+        android:text="Resultado: "
+        android:textSize="18sp" />
+
+    <!-- Texto para mostrar la selección de la computadora -->
+    <TextView
+        android:id="@+id/tvComputerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:text="Computadora eligió: "
+        android:textSize="16sp" />
+
+    <!-- Texto para mostrar la puntuación del jugador -->
+    <TextView
+        android:id="@+id/tvPlayerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tvComputerChoice"
+        android:layout_centerHorizontal="true"
+        android:text="Jugador: 0"
+        android:textSize="16sp" />
+
+    <!-- Texto para mostrar la puntuación de la computadora -->
+    <TextView
+        android:id="@+id/tvComputerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tvPlayerScore"
+        android:layout_centerHorizontal="true"
+        android:text="Computadora: 0"
+        android:textSize="16sp" />
+
+    <!-- Frase en la parte inferior derecha -->
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:text="Hecho por Wilson Sánchez"
+        android:textSize="14sp"
+        android:textColor="#808080" />
+</RelativeLayout>
+

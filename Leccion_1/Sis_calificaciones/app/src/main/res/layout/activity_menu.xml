@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <!-- Botón para eliminar alumno -->
+    <Button
+        android:id="@+id/btn_eliminar_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Alumno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para consultar la nota -->
+    <Button
+        android:id="@+id/btn_consultar_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Nota"
+        app:layout_constraintTop_toBottomOf="@id/btn_eliminar_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para modificar la nota -->
+    <Button
+        android:id="@+id/btn_modificar_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Nota"
+        app:layout_constraintTop_toBottomOf="@id/btn_consultar_nota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para mostrar los suspensos -->
+    <Button
+        android:id="@+id/btn_mostrar_suspensos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Suspensos"
+        app:layout_constraintTop_toBottomOf="@id/btn_modificar_nota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para mostrar los aprobados -->
+    <Button
+        android:id="@+id/btn_mostrar_aprobados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Aprobados"
+        app:layout_constraintTop_toBottomOf="@id/btn_mostrar_suspensos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Botón para mostrar candidatos a matrícula de honor -->
+    <Button
+        android:id="@+id/btn_candidatos_mh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Candidatos MH"
+        app:layout_constraintTop_toBottomOf="@id/btn_mostrar_aprobados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camaronlandia</title>
+    <style>
+        body {
+
+            font:100; 
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #007C91;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background: #004D57;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 2em;
+        }
+        .producto {
+            background: white;
+            border-radius: 10px;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .producto h3 {
+            margin: 0.5em 0;
+        }
+        .precio {
+            color: #007C91;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .btn {
+            background: #007C91;
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 0.5em;
+        }
+        footer {
+            background: #004D57;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Camaronlandia</h1>
+    <p>Los mejores camarones directamente a tu hogar</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="productos">
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x200?text=Camarón+1kg" alt="Camarón 1kg">
+        <h3>Camarón pelado 1kg</h3>
+        <p class="precio">$8.50</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x200?text=Camarón+Grande" alt="Camarón Grande">
+        <h3>Camarón grande con cáscara 1kg</h3>
+        <p class="precio">$10.00</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x200?text=Cola+de+Camarón" alt="Cola de camarón">
+        <h3>Cola de camarón precocido 500g</h3>
+        <p class="precio">$5.25</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Camaronlandia. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

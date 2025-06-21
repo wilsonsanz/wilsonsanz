@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Camarones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicias del Mar: Camarones Frescos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a nuestra tienda de camarones</h2>
+            <p>Ofrecemos los camarones más frescos y de la mejor calidad, directamente del mar a su mesa.</p>
+            <img src="shrimpfresco.jpg" alt="Camarones frescos">
+            <div id="jumping-shrimp-container">
+                <img src="shrimp.jpg" alt="Jumping Shrimp" id="jumping-shrimp">
+            </div>
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa familiar con más de 20 años de experiencia en la cría y distribución de camarones de la más alta calidad. Nuestro compromiso es llevar a su hogar un producto fresco, delicioso y sostenible.</p>
+            <p>Nuestros camarones son criados en granjas acuícolas que cumplen con los más altos estándares ambientales y de bienestar animal. Cuidamos cada detalle del proceso, desde la siembra hasta la cosecha, para garantizar un producto excepcional.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto">
+                <h3>Camarón Jumbo</h3>
+                <img src="shrimpgrande.jpg" alt="Camarón Jumbo">
+                <p>Deliciosos camarones jumbo "LOS MAS GRANDES DE LA REGION", perfectos para cualquier ocasión.</p>
+                <p>Precio: $15.00/lb</p>
+            </div>
+            <div class="producto">
+                <h3>Camarón Mediano</h3>
+                <img src="shrimpmedia.jpg" alt="Camarón Mediano">
+                <p>Camarones de tamaño mediano, ideales para cócteles y ensaladas.</p>
+                <p>Precio: $12.00/lb</p>
+            </div>
+            <div class="producto">
+                <h3>Camarón Pequeño</h3>
+                <img src="shrimppeque.jpg" alt="Camarón Pequeño">
+                <p>Pequeños pero sabrosos, excelentes para sopas y arroces.</p>
+                <p>Precio: $10.00/lb</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctenos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Venta de Camarones. Todos los derechos reservados. Wilson Sánchez</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

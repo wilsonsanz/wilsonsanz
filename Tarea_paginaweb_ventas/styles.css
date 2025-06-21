@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a2d2ff, #1e90ff);
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+#jumping-shrimp-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+}
+
+#jumping-shrimp {
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    width: 100px;
+    animation: jump 5s linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        left: -100px;
+        transform: rotate(0deg);
+    }
+    25% {
+        bottom: 100px;
+        transform: rotate(20deg);
+    }
+    50% {
+        left: calc(50% - 50px);
+        bottom: 50px;
+        transform: rotate(0deg);
+    }
+    75% {
+        bottom: 100px;
+        transform: rotate(-20deg);
+    }
+    100% {
+        left: 100%;
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+}
+
+#sobre-nosotros {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}

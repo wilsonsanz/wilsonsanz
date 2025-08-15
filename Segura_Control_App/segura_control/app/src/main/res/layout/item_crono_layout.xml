@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="8dp"
+    android:background="@drawable/rounded_item_background">
+    <TextView
+    android:id="@+id/tvCronoLabel" android:layout_width="0dp"
+    android:layout_weight="1.5"
+    android:layout_height="wrap_content"
+    android:text="NOMBRE_CRONO" android:textSize="16sp"
+    android:textColor="@color/text_color_primary"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCronoTime" android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="22sp"
+        android:textColor="@color/blue_primary"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnStartCrono" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="8dp"
+        style="@style/PlayButtonStyle" /> <Button
+        android:id="@+id/btnStopCrono" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◼"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="4dp"
+        style="@style/StopButtonStyle" /> </LinearLayout>

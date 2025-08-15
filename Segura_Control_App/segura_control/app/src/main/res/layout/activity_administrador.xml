@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/fondo_admi2">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido, Administrador"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVerCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrar datos ELITE"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        style="@style/colorbutton" />
+
+    <Button
+        android:id="@+id/btnCancelarCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrar datos DELTA"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        style="@style/colorbutton" />
+
+    <!-- Agrega más elementos aquí según sea necesario para la pantalla de Administrador -->
+</LinearLayout>

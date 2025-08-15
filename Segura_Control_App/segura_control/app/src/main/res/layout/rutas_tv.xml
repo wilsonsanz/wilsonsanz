@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="8dp"> <!-- Añadido un margen inferior para separar las cards -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <!-- DISTRITO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="DISTRITO: " />
+            <TextView
+                android:id="@+id/tvDistri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- TURNO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="TURNO: " />
+            <TextView
+                android:id="@+id/tvTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- GRUPO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="GRUPO: " />
+            <TextView
+                android:id="@+id/tvGrupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- MOVIL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="MOVIL: " />
+            <TextView
+                android:id="@+id/tvMovil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- NOMBRE_DEL_CONDUCTOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="CONDUCTOR: " />
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- RECORRIDO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="RECORRIDO: " />
+            <TextView
+                android:id="@+id/tvRecorrido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <!-- TELEFONO - CAMBIADO A EDITTEXT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="TELÉFONO: " />
+            <EditText
+                android:id="@+id/tvTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:inputType="phone"
+                android:hint="Ingrese teléfono"
+                android:singleLine="true"
+                android:background="@android:color/transparent" /> <!-- Para que se vea como texto normal -->
+        </LinearLayout>
+
+        <!-- COPILOTO - CAMBIADO A EDITTEXT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="COPILOTO 1: " />
+            <EditText
+                android:id="@+id/tvCopiloto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:inputType="textPersonName"
+                android:hint="Ingrese copiloto 1"
+                android:singleLine="true"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- COPILOTO_2 - CAMBIADO A EDITTEXT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="COPILOTO 2: " />
+            <EditText
+                android:id="@+id/tvCopiloto2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:inputType="textPersonName"
+                android:hint="Ingrese copiloto 2"
+                android:singleLine="true"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- CONSIGNAS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="CONSIGNAS: " />
+            <TextView
+                android:id="@+id/tvConsignas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#050D0D"
+                />
+        </LinearLayout>
+
+        <!-- COORDENADAS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:text="COORDENADAS: " />
+            <TextView
+                android:id="@+id/tvCoordenadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#25ADA9" />
+        </LinearLayout>
+
+        <!-- Botón ENVIAR DATOS -->
+        <Button
+            android:id="@+id/btnEnviarDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar datos"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/fondo_menu3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Ingreso, Salida y Combustible"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="26dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="56dp" />
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="120dp"
+        android:contentDescription="Logo de la institución"
+        android:src="@drawable/logo_iess"
+        android:layout_marginBottom="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btningre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="SALIDA DE BASE"
+            style="@style/colorbutton"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnsali"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="INGRESO A BASE"
+            style="@style/colorbutton"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btncombustible"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="REPORTE COMBUSTIBLE"
+            style="@style/colorbutton"
+            android:padding="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

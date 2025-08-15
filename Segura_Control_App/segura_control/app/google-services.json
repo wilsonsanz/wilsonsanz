@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729296790429",
+    "project_id": "segura-control-3d875",
+    "storage_bucket": "segura-control-3d875.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729296790429:android:bdc2d8d8e8ec238b65c574",
+        "android_client_info": {
+          "package_name": "com.example.segura_control"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXnVkPyQm6X6uSNYr59SZs_xH8sgNSIZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

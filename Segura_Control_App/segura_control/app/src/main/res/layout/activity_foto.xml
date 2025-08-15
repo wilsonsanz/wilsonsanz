@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.segura.Activity.FotoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vista Previa de la Foto"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewCaptured"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:background="#E0E0E0"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <TextView
+        android:id="@+id/textViewPhotoPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ruta de la foto: "
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Listo"/>
+
+</LinearLayout>

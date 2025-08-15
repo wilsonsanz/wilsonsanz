@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_cre">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName" />
+
+        <!-- Fecha de nacimiento -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Nacimiento"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/AAAA"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Fecha de caducidad de licencia -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Caducidad Licencia"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etLicenseExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/AAAA"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:clickable="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de cuenta"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/tipodecuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELTA"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ELITE"
+                android:textColor="@color/black"/>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="phone" />
+
+        <!-- Número de vehículo -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Vehículo"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/etVehicleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Sangre"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:entries="@array/blood_types"
+            android:textColor="@color/black"/>
+
+        <!-- Sección para Foto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
+
+
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Foto"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+[versions]
+agp = "8.8.2"
+firebaseBom = "33.16.0"
+gson = "2.10.1"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinxCoroutinesAndroid = "1.8.1" # Versión para kotlinx-coroutines-android
+kotlinxCoroutinesCore = "1.8.1"     # <-- ¡NUEVA! Versión para kotlinx-coroutines-core
+lifecycleViewmodelKtx = "2.9.1"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+recyclerview = "1.4.0"
+retrofit = "2.9.0"
+room = "2.6.1"             # Versión para Room Runtime y KTX (cambiaremos para alinear con el compilador si es necesario)
+roomCompiler = "2.7.2"     # Versión para Room Compiler
+exifinterface = "1.4.1"
+playServicesLocation = "21.3.0"
+okhttp = "4.12.0"          # <-- ¡NUEVA! Versión para OkHttp
+okhttpLoggingInterceptor = "4.12.0" # <-- ¡NUEVA! Versión para OkHttp Logging Interceptor
+workRuntimeKtx = "2.10.2"
+media3CommonKtx = "1.7.1"
+transportApi = "3.0.0"
+firebaseFirestoreKtx = "25.1.4"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+androidx-room-compiler-v272 = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" } # Alias para el compilador de Room
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+androidx-exifinterface = { group = "androidx.exifinterface", name = "exifinterface", version.ref = "exifinterface" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" } # <-- ¡NUEVA LÍNEA!
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" } # Ya estaba, pero asegúrate que este es el que usas
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" } # <-- ¡NUEVA LÍNEA!
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpLoggingInterceptor" }
+androidx-media3-common-ktx = { group = "androidx.media3", name = "media3-common-ktx", version.ref = "media3CommonKtx" }
+transport-api = { group = "com.google.android.datatransport", name = "transport-api", version.ref = "transportApi" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" } # <-- ¡NUEVA LÍNEA!
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+# Asegúrate de que el plugin de KSP esté definido si lo sigues usando en app/build.gradle.kts
+# ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" } # Si usas KSP, define 'kspVersion' en [versions]
+# Y el plugin de Google Services también debe estar aquí si lo usas en el build.gradle.kts de la app.
+# google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" } # Define 'googleServices' en [versions]
+

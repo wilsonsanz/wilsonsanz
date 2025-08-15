@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#5D99D5"
+    tools:context="com.segura.Activity.WikiActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#749FE0" tools:context=".YourActivityName">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Tiempos Personales"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etMovil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Móvil"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="16dp"
+            android:background="#E6EDF6"
+            android:textColor="#0B0B0B"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF" android:layout_marginBottom="12dp"
+            android:elevation="1dp"> <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="WC 1"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCronoWC1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="22sp"
+                android:textColor="#007BFF" android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnStartWC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF" android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStopWC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◼"
+                android:textSize="18sp"
+                android:backgroundTint="#DC3545" android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="WC 2"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCronoWC2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="22sp"
+                android:textColor="#007BFF"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnStartWC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStopWC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◼"
+                android:textSize="18sp"
+                android:backgroundTint="#DC3545"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="DESAYUNO"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCronoDesayuno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="22sp"
+                android:textColor="#007BFF"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnStartDesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStopDesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◼"
+                android:textSize="18sp"
+                android:backgroundTint="#DC3545"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="ALMUERZO"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCronoAlmuerzo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="22sp"
+                android:textColor="#007BFF"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnStartAlmuerzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStopAlmuerzo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◼"
+                android:textSize="18sp"
+                android:backgroundTint="#DC3545"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="MERIENDA"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCronoMerienda"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="22sp"
+                android:textColor="#007BFF"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnStartMerienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="18sp"
+                android:backgroundTint="#4694E7"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStopMerienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◼"
+                android:textSize="18sp"
+                android:backgroundTint="#DC3545"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGREGAR DATOS"
+            android:backgroundTint="#020910" android:textColor="#2EFF35"
+            android:paddingVertical="14dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

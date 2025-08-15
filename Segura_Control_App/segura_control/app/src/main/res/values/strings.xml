@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SEGURA CONTROL</string>
+    <string name="spinner_prompt">Seleccione un Grupo</string>
+
+    <string-array name="grupos_array">
+        <item>Grupo A</item>
+        <item>Grupo B</item>
+        <item>Grupo C</item>
+        <item>Grupo D</item>
+    </string-array>
+
+</resources>

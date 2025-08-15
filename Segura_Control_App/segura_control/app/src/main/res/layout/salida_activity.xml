@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#5D99D5"
+    tools:context="com.segura.Activity.SalidaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salida de Turno"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/btnMovil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="MOVIL"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:backgroundTint="#4A6178"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/btnCONDUCTOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="CONDUCTOR"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:backgroundTint="#4A6178"
+                android:drawableStart="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:prompt="@string/spinner_prompt"
+                android:backgroundTint="#4A6178"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/btnHORADESALIDA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="HORA DE SALIDA DE BASE"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:backgroundTint="#4A6178"
+                android:inputType="time"
+                android:drawableStart="@android:drawable/ic_menu_recent_history"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/btnKILOMETRAJE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="KILOMETRAJE DE INGRESO A BASE"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:backgroundTint="#4A6178"
+                android:inputType="number"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/btnCOMBUSTIBLE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#4A6178"
+                android:drawableStart="@android:drawable/ic_menu_upload"
+                android:drawablePadding="8dp"
+                android:hint="COMBUSTIBLE (17 GALONES)"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#CCCCCC" />
+
+            <EditText
+                android:id="@+id/etComentarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:hint="Comentarios Adicionales"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"
+                android:backgroundTint="#4A6178"
+                android:minLines="3"
+                android:gravity="top"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:drawablePadding="8dp" />
+
+            <EditText
+                android:id="@+id/etPhotoUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:hint="URL de la Foto"
+                android:enabled="false"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Datos"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnAgregarfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Foto"
+            android:backgroundTint="#0288D1"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

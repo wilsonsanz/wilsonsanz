@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/fondo_menu3">
+
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Bienvenido a la Aplicación"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Logo de la institución"
+        android:src="@drawable/logo_iess" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etNumeroIngresado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el número aquí"
+            android:inputType="text"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnEnviarMovil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR MÓVIL"
+            android:minWidth="180dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNumeroRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número no establecido"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0C6EB3"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btningreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO INGRESO, SALIDA y COMBUSTIBLE"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btncita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOVEDADES"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/bthojaderutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOJA DE RUTA"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btnTiempospersonales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO DE TIEMPOS PERSONALES"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CERRAR SESION"
+            android:background="@drawable/btn_futuristic_style"
+            app:backgroundTint="@null"
+            android:padding="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

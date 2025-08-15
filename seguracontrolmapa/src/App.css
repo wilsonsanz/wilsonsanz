@@ -1,0 +1,17 @@
+/**
+ * @author Wilson Fernando Sánchez Santana
+ * @copyright Copyright (c) 2025 - 2026 Wilson Sánchez
+ * @license 2025 - 2026
+ */
+/* src/App.css o MapComponent.css */
+
+/* Estilos globales para el cuerpo y la raíz de la aplicación */
+html, body, #root {
+  height: 100%; /* Asegura que la raíz de la app ocupe toda la altura */
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Usamos una fuente moderna como Inter */
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* Fondo degradado suave */
+  color: #333; /* Color de texto principal */
+}
+
+

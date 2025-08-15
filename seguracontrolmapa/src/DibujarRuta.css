@@ -1,0 +1,96 @@
+/* src/DibujarRuta.css */
+
+.DrawingRouteContainer {
+  display: flex;
+  flex-direction: column;
+  /* --- CAMBIOS CLAVE AQUÍ --- */
+  /* Eliminado: height: 100vh; */ /* Esto causaba que sobrepasara el main de App.js */
+  /* Eliminado: width: 100vw; */  /* Esto causaba que sobrepasara el main de App.js */
+  flex-grow: 1; /* Permite que este contenedor ocupe el espacio restante en su padre (main) */
+  height: 100%; /* Asegura que ocupe el 100% de la altura de su padre (main) */
+  width: 100%; /* Asegura que ocupe el 100% del ancho de su padre (main) */
+  /* -------------------------- */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5; /* Un fondo suave */
+}
+
+.DrawingMapContainer {
+  flex-grow: 1; /* El mapa ocupará todo el espacio disponible dentro de DrawingRouteContainer */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Margen alrededor del mapa */
+}
+
+.DrawingControls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 12px 12px; /* Bordes redondeados en la parte inferior */
+  flex-shrink: 0; /* Asegura que los controles no se encojan */
+}
+
+.ClearRouteButton, .SaveRouteButton {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ClearRouteButton {
+  background-color: #dc3545; /* Rojo para borrar */
+  color: white;
+}
+
+.ClearRouteButton:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.SaveRouteButton {
+  background-color: #28a745; /* Verde para guardar */
+  color: white;
+}
+
+.SaveRouteButton:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+/* Mensajes de carga y error (pueden eliminarse si no se usan en JS) */
+.LoadingMap, .LoadingError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5em;
+  color: #007bff;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .DrawingMapContainer { /* Ajuste el margen en pantallas pequeñas */
+    margin: 10px;
+  }
+
+  .DrawingControls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .ClearRouteButton, .SaveRouteButton {
+    width: 100%;
+    padding: 10px;
+  }
+}

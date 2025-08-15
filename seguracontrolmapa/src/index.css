@@ -1,0 +1,30 @@
+/**
+ * @author Wilson Fernando Sánchez Santana
+ * @copyright Copyright (c) 2025 - 2026 Wilson Sánchez
+ * @license 2025 - 2026
+ */
+/* src/index.css */
+
+body {
+  margin: 0; /* Elimina el margen predeterminado del body */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Evita barras de desplazamiento si el mapa es 100vw/100vh */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Opcional: Si quieres que el elemento root de React también ocupe el 100% */
+html, #root {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  display: flex; /* Asegura que el contenido se extienda */
+  flex-direction: column;
+}

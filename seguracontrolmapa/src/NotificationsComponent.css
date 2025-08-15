@@ -1,0 +1,52 @@
+/**
+ * @author Wilson Fernando Sánchez Santana
+ * @copyright Copyright (c) 2025 - 2026 Wilson Sánchez
+ * @license 2025 - 2026
+ */
+/* src/NotificationsComponent.css */
+
+/* Estilos para el contenedor principal de la hoja de cálculo */
+.google-sheet-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la barra de botones (estilo Matrix) */
+.button-bar {
+    padding: 15px;
+    text-align: center;
+    background-color: #000; /* Fondo negro */
+    border-bottom: 1px solid #0F0; /* Borde verde */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra verde brillante */
+}
+
+/* Estilos para los botones individuales (estilo Matrix) */
+.sheet-button {
+    margin: 0 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0F0; /* Texto verde brillante */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #0F0; /* Borde verde */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.8); /* Sutil brillo de texto */
+}
+
+/* Efecto hover para los botones (estilo Matrix) */
+.sheet-button:hover {
+    background-color: rgba(0, 255, 0, 0.2); /* Fondo verde semitransparente al pasar el mouse */
+    color: #000; /* Texto negro al pasar el mouse */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.9); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Estilos para el iframe */
+.google-sheet-iframe {
+    border: none;
+    flex-grow: 1; /* Ocupa el espacio restante */
+}

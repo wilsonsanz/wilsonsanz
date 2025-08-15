@@ -1,0 +1,147 @@
+/* src/MapComponent.css - Optimizado para móviles */
+
+/* --- Estilos base (ya están bien) --- */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --- Contenedor principal para todos los tamaños --- */
+.DashboardContainer {
+  display: flex;
+  flex-direction: column; /* Apila los elementos por defecto */
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Contenedor del mapa --- */
+.MapContainer {
+  flex-grow: 1;
+  width: 100%; /* Ocupa todo el ancho en móviles */
+  height: 60vh; /* Se ajusta para dejar espacio a la tabla */
+  border-right: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+/* Contenedor de la tabla */
+.TableContainer {
+  flex-shrink: 0;
+  width: 100%; /* Ocupa todo el ancho en móviles */
+  height: 40vh; /* Se ajusta para que el mapa tenga más espacio */
+  background-color: #000000;
+  color: #00ff00;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+/* --- Botones --- */
+/* Los botones se reubican para no obstruir el mapa en móviles */
+.MapControls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease; /* Añadido para una transición suave */
+}
+
+/* Nueva clase para posicionar en la esquina inferior izquierda */
+.MapControls--corner {
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  left: 10px;
+}
+
+.ToggleTableButton,
+.ToggleMapHistoryButton,
+.DeleteAllSavedRoutesButton,
+.ToggleMapStyleButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+  color: rgb(74, 235, 69);
+}
+
+.ToggleTableButton {
+  background-color: #070808;
+}
+
+.ToggleMapHistoryButton {
+  background-color: #000000;
+}
+
+.ToggleMapStyleButton {
+  background-color: #0a0909;
+}
+
+.DeleteAllSavedRoutesButton {
+  background-color: #0a0808;
+}
+
+/* 💡 EFECTO HOVER */
+.ToggleTableButton:hover,
+.ToggleMapHistoryButton:hover,
+.ToggleMapStyleButton:hover,
+.DeleteAllSavedRoutesButton:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* --- Media Query para pantallas grandes (desktop) --- */
+@media (min-width: 901px) {
+  .DashboardContainer {
+    flex-direction: row; /* Vuelve a la disposición horizontal en desktop */
+  }
+
+  .MapContainer {
+    width: 70%; /* Vuelve al 70% del ancho */
+    height: 100%; /* Ocupa el 100% de la altura */
+    border-right: 1px solid #e0e0e0;
+  }
+
+  .TableContainer {
+    width: 30%; /* Vuelve al 30% del ancho */
+    height: 100%; /* Ocupa el 100% de la altura */
+  }
+  
+  /* Botones en desktop, se reubican en la esquina */
+  .MapControls {
+    position: absolute;
+    left: auto;
+    transform: none;
+    top: 120px;
+    right: 1650px;
+    width: auto;
+  }
+}
